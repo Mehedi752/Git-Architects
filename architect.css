@@ -69,6 +69,7 @@ main>section {
     margin: 0 auto;
 }
 
+
 /* Banner Related Styles. */
 .banner-content {
     max-width: 850px;
@@ -124,16 +125,64 @@ main>section {
 
 
 
+/* Features & Cards Related Styles. */
+.features {
+    gap: 120px;
+}
+
+.features-title {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+    border-left: 5px solid rgb(255, 144, 14);
+    padding-left: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.features-card {
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card-title {
+    color: rgb(19, 19, 19);
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.experience-button {
+    width: 342px;
+    height: 200px;
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    padding: 42px 45px;
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    border: none;
+    margin-left: -90px;
+    margin-top: -75px;
+}
+
+.experience-span {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+
 
 /* Responsive Media Query. */
 @media screen and (max-width:576px) {
 
     .navbar,
-    .navbar-links{
+    .navbar-links {
         flex-direction: column;
     }
 
-    .teams{
+    .teams {
         flex-direction: column-reverse;
         margin-top: 30px;
     }
@@ -142,6 +191,7 @@ main>section {
         grid-template-columns: 1fr;
         align-items: center;
         gap: 30px;
+        margin: 30px;
     }
 
     .team-images img {
@@ -156,9 +206,83 @@ main>section {
     }
 
     .navbar-links {
-         gap: 10px;
-         margin: 0px;
-         padding-left: 0px;
+        gap: 10px;
+        margin: 0px;
+        padding-left: 0px;
+    }
+
+    .features {
+        flex-direction: column;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .features-title{
+        border-left: none;
+        border-bottom: 3px solid rgb(255, 144, 14);
+        border-bottom-style: dashed;
+        padding-bottom: 20px;
+        margin: 20px;
+        text-align: left;
+        font-size: 2.2rem;
+        padding-left: 0px;
+    }
+
+    .features-content {
+        text-align: center;
+    }
+
+    .features-image {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .features-image img {
+        width: 100%;
+        border: 2px solid rgb(255, 144, 14);
+    }
+
+    .experience-span {
+        font-size: 1.25rem;
+        font-weight: 600;
+    }
+
+    .experience-button {
+        margin: 20px 30px;
+        width: 200px;
+        height: 90px;
+        font-size: 1.25rem;
+        font-weight: 600;
+        padding: 20px 25px;
+    }
+
+    .features-card{
+        border: 1px solid black;
+        margin: 30px;
+    }
+
+}
+
+/* Medium Devices or Tablet. */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .teams {
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .our-features {
+        margin-left: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .team-images {
+        margin: 30px;
+    }
+
+    .team-images img {
+        border: 2px solid rgb(255, 144, 14);
+        border-radius: 10px;
     }
 
 }
