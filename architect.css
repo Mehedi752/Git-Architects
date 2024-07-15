@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Shared Styles. */
+header {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+.display-flex {
+    display: flex;
+}
+
+.button {
+    border-radius: 8px;
+    background: rgb(255, 144, 14);
+    color: rgb(255, 255, 255);
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 20px 25px;
+    border: none;
+}
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+main>section {
+    margin-top: 130px;
+}
+
+
+
+
+/* Navbar Related Styles. */
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand {
+    color: rgb(19, 19, 19);
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-top: 50px;
+    padding-left: ;
+}
+
+.nav-item {
+    list-style: none;
+    margin-right: 30px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: rgb(66, 66, 66);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.navbar,
+.banner {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/* Banner Related Styles. */
+.banner-content {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.banner-title {
+    color: rgb(19, 19, 19);
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.banner-image {
+    width: 100%;
+}
+
+
+/* Teams and Features Related Styles. */
+.teams {
+    align-items: center;
+}
+
+.team-images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.our-features {
+    max-width: 530px;
+    margin-left: 70px;
+}
+
+.feature-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+
+.feature-description {
+    color: rgb(114, 114, 114);
+    font-size: 1rem;
+    margin-bottom: 32px;
+}
+
+
+
+
+/* Responsive Media Query. */
+@media screen and (max-width:576px) {
+
+    .navbar,
+    .navbar-links{
+        flex-direction: column;
+    }
+
+    .teams{
+        flex-direction: column-reverse;
+        margin-top: 30px;
+    }
+
+    .team-images {
+        grid-template-columns: 1fr;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .team-images img {
+        border: 2px solid rgb(255, 144, 14);
+        border-radius: 10px;
+    }
+
+    .our-features {
+        margin-left: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .navbar-links {
+         gap: 10px;
+         margin: 0px;
+         padding-left: 0px;
+    }
+
+}
